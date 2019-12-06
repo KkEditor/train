@@ -7,7 +7,10 @@ from model import relu6
 
 trained_image_width=512
 mean_subtraction_value=127.5
-image=cv2.imread("1.jpeg",1)
+def read_data():
+    train_path = '../dataset/images/train2017'
+    val_path = "../dataset/images/val2017"
+
 image=cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
 # resize to max dimension of images from training dataset
 w, h, _ = image.shape
