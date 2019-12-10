@@ -200,8 +200,8 @@ def _inverted_res_block(inputs, expansion, stride, alpha, filters, block_id, ski
     return x
 
 
-def Deeplabv3(weights='pascal_voc', input_tensor=None, input_shape=(512, 512, 3), classes=21, backbone='mobilenetv2',
-              OS=16, alpha=1., activation=None):
+def Deeplabv3(weights, input_tensor, input_shape, classes, backbone,activation,
+              OS, alpha=1.):
     """ Instantiates the Deeplabv3+ architecture
 
     Optionally loads weights pre-trained
