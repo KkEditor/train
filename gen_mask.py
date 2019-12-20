@@ -1,5 +1,5 @@
 import cv2
-mypath="/image/"
+mypath="../Deep-Image-Matting/data/train2014"
 edited="/mask/"
 onlyfiles = [ f for f in os.listdir(mypath) if os.path.isfile(os.path.join(mypath,f)) ]
 images = np.empty(len(onlyfiles), dtype=object)
