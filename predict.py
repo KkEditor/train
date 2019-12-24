@@ -1,7 +1,6 @@
 import os
 import tensorflow as tf
 import numpy as np
-import tensorflow as tf
 keras=tf.keras
 layers=tf.keras.layers
 GlobalAveragePooling2D, Dense=layers.GlobalAveragePooling2D, layers.Dense
